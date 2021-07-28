@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LIGHT -->
+    <color name="colorPrimary">#0088FE</color>
+    <color name="foregroundPrimary">#D4D4D4</color>
+    <color name="foregroundSecondary">#AAAAAA</color>
+    <color name="foregroundTitle">#000000</color>
+    <color name="foregroundAccent">#E3E3E3</color>
+
+    <color name="backgroundPrimary">#F9FAF9</color>
+    <color name="backgroundSecondary">#FEFFFE</color>
+    <color name="backgroundAccent">#EFEFEF</color> <!-- ehem. E3E3E3 -->
+    <color name="backgroundLight">#000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="accentRed">#FE0026</color>
+    <color name="accentGreen">#21AF2F</color>
+
+    <color name="shadowColor">#939393</color>
+
+</resources>

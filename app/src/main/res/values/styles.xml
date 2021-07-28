@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+        <!-- LIGHT -->
+        <item name="foregroundPrimary">@color/foregroundPrimary</item>
+        <item name="foregroundSecondary">@color/foregroundSecondary</item>
+        <item name="foregroundTitle">@color/foregroundTitle</item>
+        <item name="foregroundAccent">@color/foregroundAccent</item>
+
+        <item name="backgroundPrimary">@color/backgroundPrimary</item>
+        <item name="backgroundSecondary">@color/backgroundSecondary</item>
+        <item name="backgroundAccent">@color/backgroundAccent</item> <!-- ehem. E3E3E3 -->
+        <item name="backgroundLight">@color/backgroundLight</item>
+
+        <item name="white">@color/white</item>
+        <item name="black">@color/black</item>
+
+        <item name="accentRed">@color/accentRed</item>
+        <item name="accentGreen">@color/accentGreen</item>
+
+        <item name="shadowColor">@color/shadowColor</item>
+    </style>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="16dp"
+    android:layout_marginBottom="1dp"
+    app:carbon_cornerRadius="@dimen/cornerRadius"
+    android:background="?backgroundSecondary">
+
+    <CheckBox
+            android:id="@+id/itemList_checkBox"
+            android:layout_width="wrap_content"
+            android:buttonTint="?colorPrimary"
+            android:layout_height="match_parent"/>
+
+    <TextView
+            android:id="@+id/itemList_titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Milch"
+            android:layout_marginLeft="6dp"
+            android:textColor="?foregroundTitle"
+            android:fontFamily="@font/sf_bold"
+            android:textSize="20dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end">
+
+        <ImageButton
+                android:id="@+id/itemList_deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/fui_transparent"
+                app:tint="?accentRed"
+                android:src="@drawable/icon_remove"/>
+
+    </LinearLayout>
+
+</carbon.widget.LinearLayout>

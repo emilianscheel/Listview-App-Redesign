@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_popup"
+        android:paddingTop="12dp"
+        android:orientation="vertical"
+        android:id="@+id/NewListAct_scrollview"
+        tools:context=".NeueListe.NewTypeActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/NewTypeAct_contentView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/SearchAct_down"
+                    android:layout_width="44dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_down"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <carbon.widget.LinearLayout
+                    android:id="@+id/NewTypeAct_closeButton"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    app:carbon_elevation="10dp"
+                    app:carbon_elevationShadowColor="?shadowColor"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="20dp"
+                    app:carbon_cornerRadius="19dp"
+                    android:background="?backgroundSecondary"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <carbon.widget.ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_xmark"
+                        app:carbon_tint="?foregroundSecondary"/>
+
+            </carbon.widget.LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Neue „Art“ erstellen"
+                    android:fontFamily="@font/sf_black"
+                    android:textSize="32dp"
+                    android:gravity="center"
+                    android:layout_marginTop="55dp"
+                    android:textColor="?foregroundTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/SearchAct_down"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/textView6"/>
+
+            <carbon.widget.EditText
+                    android:id="@+id/NewTypeAct_nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name hier eingeben"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textCursorDrawable="@drawable/icon_cursor"
+                    android:textColor="?foregroundTitle"
+                    android:textColorHint="?foregroundSecondary"
+                    android:fontFamily="@font/sf_bold"
+                    android:background="?backgroundSecondary"
+                    app:carbon_cornerRadius="@dimen/cornerRadius"
+                    app:carbon_elevationShadowColor="?shadowColor"
+                    app:carbon_elevation="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            <LinearLayout
+                    android:id="@+id/NewTypeAct_addButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/bg_button_primary"
+                    app:layout_constraintTop_toBottomOf="@id/NewTypeAct_nameEditText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_plus_fill"
+                        app:tint="@color/white"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Hinzufügen"
+                        android:fontFamily="@font/sf_bold"
+                        android:textAllCaps="false"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

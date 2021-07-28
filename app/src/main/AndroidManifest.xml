@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="de.emilianscheel.listview">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.Mak"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name="de.emilianscheel.listview.Einführung.IntroHelpActivity"
+                  android:configChanges="orientation"
+                  android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Mediathek.TypesActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Mediathek.TagsActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Hilfe.HelpItemActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Hilfe.HelpActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Einführung.CompletedActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Einführung.IntroTagsActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Einführung.CheckBoxActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Einführung.DarkModeActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Mediathek.SearchActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.NeueListe.NewTypeActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Einführung.WelcomeActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Einstellungen.SettingsActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.NeueListe.NewListActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Mediathek.EditListActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Mediathek.MainActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Mediathek.DashboardActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="de.emilianscheel.listview.Controller.FirstActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

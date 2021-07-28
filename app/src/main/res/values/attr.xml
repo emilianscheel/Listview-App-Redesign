@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="foregroundPrimary" type="color" />
+    <attr name="foregroundSecondary" type="color" />
+    <attr name="foregroundTitle" type="color" />
+    <attr name="foregroundAccent" type="color" />
+
+    <attr name="backgroundPrimary" type="color" />
+    <attr name="backgroundSecondary" type="color" />
+    <attr name="backgroundAccent" type="color" />
+    <attr name="backgroundLight" type="color" />
+
+    <attr name="white" type="color" />
+    <attr name="black" type="color" />
+
+    <attr name="accentRed" type="color" />
+    <attr name="accentGreen" type="color" />
+
+    <attr name="shadowColor" format="color"/>
+
+</resources>

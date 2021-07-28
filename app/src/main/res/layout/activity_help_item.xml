@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="?colorPrimary"
+        tools:context=".Hilfe.HelpItemActivity">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:gravity="end"
+            android:paddingBottom="20dp">
+
+        <carbon.widget.LinearLayout
+                android:id="@+id/HelpItemActivity_closeButton"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                app:carbon_elevation="10dp"
+                app:carbon_elevationShadowColor="?shadowColor"
+                android:layout_marginRight="35dp"
+                app:carbon_cornerRadius="19dp"
+                android:background="?backgroundSecondary"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <carbon.widget.ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/icon_xmark"
+                    app:carbon_tint="?foregroundSecondary"/>
+
+        </carbon.widget.LinearLayout>
+
+        <TextView
+                android:id="@+id/HelpItemActivity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_black"
+                android:textSize="32dp"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_marginTop="20dp"
+                android:textColor="?white"
+                android:text="Neue Liste erstellen"/>
+
+    </LinearLayout>
+
+    <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:carbon_cornerRadiusTopStart="45dp"
+            app:carbon_cornerRadiusTopEnd="45dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="30dp"
+            android:background="?backgroundPrimary">
+
+            <TextView
+                    android:id="@+id/HelpItemActivity_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="?foregroundSecondary"
+                    android:text="Um eine neue Liste zu erstellen, begeben Sie sich in Ihre „Mediathek“.  Der letzte Eintrag zeigt ein „+“. Klicken Sie auf dieses. Die Daten wie der „Name“ der Liste können jetzt eingetragen werden. Bestätigen Sie nun mit Klicken auf „Hinzufügen“."
+                    android:fontFamily="@font/sf_bold"/>
+
+    </carbon.widget.LinearLayout>
+
+
+
+</LinearLayout>

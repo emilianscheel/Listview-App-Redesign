@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout
+        android:id="@+id/itemSettings_rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        app:carbon_elevation="5dp"
+        app:carbon_elevationShadowColor="?shadowColor"
+        android:background="?backgroundSecondary"
+        app:carbon_cornerRadius="@dimen/cornerRadius"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <carbon.widget.TextView
+            android:id="@+id/itemSettings_sectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meine Listen"
+            android:textColor="?foregroundTitle"
+            android:textSize="24dp"
+            android:visibility="gone"
+            android:fontFamily="@font/sf_black"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"/>
+
+    <carbon.widget.LinearLayout
+            android:id="@+id/itemSettings_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp">
+
+        <carbon.widget.TextView
+                android:id="@+id/itemSettings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Dunkelmodus"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_bold"
+                android:textSize="18dp"
+                android:textColor="?foregroundTitle"/>
+
+        <carbon.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+            <Switch
+                    android:id="@+id/itemSettings_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:thumbTint="?colorPrimary"
+                    android:trackTint="?foregroundSecondary"/>
+
+            <carbon.widget.TextView
+                    android:id="@+id/itemSettings_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Blau"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sf_bold"
+                    android:textColor="?colorPrimary"/>
+
+            <carbon.widget.ImageView
+                    android:id="@+id/itemSettings_button"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    app:carbon_tint="?foregroundSecondary"
+                    android:src="@drawable/icon_forward"/>
+
+        </carbon.widget.LinearLayout>
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.LinearLayout>

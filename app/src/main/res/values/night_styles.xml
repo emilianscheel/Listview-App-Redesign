@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <!-- DARK -->
+        <item name="colorPrimary">#0088FE</item>
+        <item name="foregroundPrimary">#E4E4E4</item>
+        <item name="foregroundSecondary">#949494</item>
+        <item name="foregroundTitle">#FFFFFF</item>
+        <item name="foregroundAccent">#3D484B</item>
+
+        <item name="backgroundPrimary">#0D1B1F</item>
+        <item name="backgroundSecondary">#19262B</item>
+        <item name="backgroundAccent">#0E191C</item> <!-- ehem. 3D484B -->
+        <item name="backgroundLight">#3B464B</item>
+
+        <item name="white">#FFFFFF</item>
+        <item name="black">#000000</item>
+
+        <item name="accentRed">#ED2240</item>
+        <item name="accentGreen">#1CE430</item>
+
+        <item name="shadowColor">#000000</item>
+    </style>
+
+</resources>

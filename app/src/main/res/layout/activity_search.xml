@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:windowSoftInputMode="adjustResize"
+        tools:context=".Mediathek.SearchActivity">
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/SearchAct_contentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_popup"
+            android:overScrollMode="never">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="12dp">
+
+            <ImageView
+                    android:id="@+id/SearchAct_down"
+                    android:layout_width="44dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_down"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suche"
+                        android:fontFamily="@font/sf_black"
+                        android:textSize="32dp"
+                        android:textColor="?foregroundTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="35dp"
+                        android:id="@+id/textView6"
+                        app:layout_constraintTop_toTopOf="@+id/SearchAct_closeButton"
+                        app:layout_constraintBottom_toBottomOf="@+id/SearchAct_closeButton"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end">
+
+                    <carbon.widget.LinearLayout
+                            android:id="@+id/SearchAct_closeButton"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            app:carbon_elevation="10dp"
+                            app:carbon_elevationShadowColor="?shadowColor"
+                            android:layout_marginRight="35dp"
+                            app:carbon_cornerRadius="19dp"
+                            android:background="?backgroundSecondary"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        <carbon.widget.ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/icon_xmark"
+                                app:carbon_tint="@color/foregroundSecondary"/>
+
+                    </carbon.widget.LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <carbon.widget.LinearLayout
+                    android:id="@+id/SearchAct_editTextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:elevation="10dp"
+                    app:carbon_elevation="10dp"
+                    app:carbon_elevationShadowColor="?shadowColor"
+                    app:carbon_cornerRadius="@dimen/cornerRadius"
+                    android:background="?backgroundSecondary"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" >
+                
+                <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_search"
+                        app:tint="?foregroundSecondary"/>
+
+                <EditText
+                        android:id="@+id/SearchAct_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="In „Mediathek“ suchen..."
+                        android:textSize="15dp"
+                        android:background="@color/fui_transparent"
+                        android:textCursorDrawable="@drawable/icon_cursor"
+                        android:textColor="?foregroundTitle"
+                        android:textColorHint="?foregroundSecondary"
+                        android:fontFamily="@font/sf_bold"/>
+
+            </carbon.widget.LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/SearchAct_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:overScrollMode="never"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
